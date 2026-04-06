@@ -1,5 +1,7 @@
 # DevOps Node.js Sample Project
 
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-PranavH04%2Finternship-blue?logo=docker)](https://hub.docker.com/r/PranavH04/internship)
+
 A simple Node.js Express application designed to demonstrate containerization, CI/CD, and Kubernetes deployment for a DevOps internship project.
 
 ## Technology Stack
@@ -50,6 +52,13 @@ This project includes a small Express server that responds with `Hello DevOps Wo
 
 ## Run Using Docker
 
+### Pull from Docker Hub
+```bash
+docker pull PranavH04/internship:latest
+docker run -p 3000:3000 PranavH04/internship:latest
+```
+
+### Build Locally
 1. Build the Docker image:
    ```bash
    docker build -t devops-node-app .
